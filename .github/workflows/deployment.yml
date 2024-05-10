@@ -1,8 +1,6 @@
 name: Node.js App Deploy
 
-on:
-  issues:
-    types: [opened]
+on: push
 
 jobs:
   deploy:

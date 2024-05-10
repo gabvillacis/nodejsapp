@@ -1,7 +1,10 @@
 name: Node.js App Deploy
 
-on: push
-
+on: 
+  push:
+    branches:
+      - main
+      
 jobs:
   deploy:
     runs-on: nodejsapp-runner

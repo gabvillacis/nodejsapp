@@ -8,12 +8,5 @@ on: [push]
 jobs:
   deploy:
     runs-on: self-hosted
-    steps:      
-      - name: Checkout repository
-        uses: actions/checkout@v4   
-
-      - name: Deploy de app
-        run: |
-          cd /home/ubuntu/actions-runner/_work/nodejsapp/nodejsapp
-          npm install # Instala dependencias si es necesario
-          pm2 restart nodeapp # Reinicia el servidor Node.js usando PM2
+    steps:     
+      - run: echo 'Ejecutando deploy job en el runner de aws ec2'  

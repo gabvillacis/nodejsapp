@@ -8,5 +8,6 @@ on: [push]
 jobs:
   deploy:
     runs-on: self-hosted
-    steps:
-      - run: echo 'Ejecutando deploy job en el runner de aws ec2'
+    steps:      
+      - name: Checkout repository
+        uses: actions/checkout@v4   
